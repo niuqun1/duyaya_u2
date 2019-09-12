@@ -1,0 +1,214 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1568261715982" stop="1568261780033">
+  <description>
+
+======================
+
+@author:niuqun
+
+@time:2019/9/11:11:10 AM
+
+@email:17689551930@163.com
+
+======================
+
+</description>
+  <name>test_duyay</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1568261715982" status="passed" stop="1568261716363">
+      <name>Test_1.test_001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261715985" status="passed" stop="1568261716363">
+          <name>点击微信登陆</name>
+          <title>点击微信登陆</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261716366" status="passed" stop="1568261720183">
+      <name>Test_1.test_002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261716367" status="passed" stop="1568261720183">
+          <name>点击如何上课</name>
+          <title>点击如何上课</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261720185" status="passed" stop="1568261724059">
+      <name>Test_1.test_007</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261720186" status="passed" stop="1568261724058">
+          <name>点击购买课程</name>
+          <title>点击购买课程</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261724060" status="passed" stop="1568261728576">
+      <name>Test_1.test_003</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261724061" status="passed" stop="1568261728576">
+          <name>点击课堂</name>
+          <title>点击课堂</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261728577" status="failed" stop="1568261750556">
+      <name>Test_1.test_005</name>
+      <failure>
+        <message>UiObjectNotFoundError: -32002 Client error: &lt;&gt; data: , method: None</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x104084210&gt;
+
+    @allure.step(title="操作关卡内部")
+    def test_005(self):
+&gt;       self.obj.click_for_cou()
+
+Script/test_duyay.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:57: in click_for_cou
+    self.click_search("t", "%s" % b)
+base/devices.py:35: in click_search
+    return self.search_element(loc,values).click()
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:38: in _inner
+    return fn(self, *args, **kwargs)
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:798: in click
+    self.must_wait(timeout=timeout)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;uiautomator2.session.UiObject object at 0x104084cd0&gt;, exists = True, timeout = None
+
+    def must_wait(self, exists=True, timeout=None):
+        """ wait and if not found raise UiObjectNotFoundError """
+        if not self.wait(exists, timeout):
+&gt;           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+E           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: &lt;&gt; data: , method: None
+
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:993: UiObjectNotFoundError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261728579" status="failed" stop="1568261750363">
+          <name>操作关卡内部</name>
+          <title>操作关卡内部</title>
+          <attachments>
+            <attachment source="bdb70ea7-1f26-4733-926a-02104d582e63-attachment.txt" title="进入：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261750558" status="passed" stop="1568261758953">
+      <name>Test_1.test_008</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261750560" status="passed" stop="1568261758953">
+          <name>进入reivw</name>
+          <title>进入reivw</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261758954" status="failed" stop="1568261780033">
+      <name>Test_1.test_009</name>
+      <failure>
+        <message>UiObjectNotFoundError: -32002 Client error: &lt;&gt; data: , method: None</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x10416cfd0&gt;
+
+    @allure.step(title="退出账号")
+    def test_009(self):
+&gt;       self.obj.click_foud()
+
+Script/test_duyay.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:81: in click_foud
+    self.click_search("d",page.found)
+base/devices.py:35: in click_search
+    return self.search_element(loc,values).click()
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:38: in _inner
+    return fn(self, *args, **kwargs)
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:798: in click
+    self.must_wait(timeout=timeout)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;uiautomator2.session.UiObject object at 0x10416c290&gt;, exists = True, timeout = None
+
+    def must_wait(self, exists=True, timeout=None):
+        """ wait and if not found raise UiObjectNotFoundError """
+        if not self.wait(exists, timeout):
+&gt;           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+E           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: &lt;&gt; data: , method: None
+
+../../dyy/venv/lib/python3.7/site-packages/uiautomator2/session.py:993: UiObjectNotFoundError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="41491-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261758956" status="failed" stop="1568261779944">
+          <name>退出账号</name>
+          <title>退出账号</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
