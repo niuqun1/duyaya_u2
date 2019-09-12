@@ -1,0 +1,324 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1568261047116" stop="1568261048323">
+  <description>
+
+======================
+
+@author:niuqun
+
+@time:2019/9/11:11:10 AM
+
+@email:17689551930@163.com
+
+======================
+
+</description>
+  <name>test_duyay</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1568261047116" status="failed" stop="1568261047228">
+      <name>Test_1.test_001</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'resourceId'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111f1da50&gt;
+
+    @allure.step(title="点击微信登陆")
+    def test_001(self):
+&gt;       self.obj.click_wx_lojin()
+
+Script/test_duyay.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:24: in click_wx_lojin
+    self.click_search("d",page.wx_login)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 'd', values = 'ai.zile.app:id/btn_wechat_login'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+&gt;           return self.driver(resourceId=values)
+E           TypeError: __init__() got an unexpected keyword argument 'resourceId'
+
+base/devices.py:21: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261047120" status="failed" stop="1568261047120">
+          <name>点击微信登陆</name>
+          <title>点击微信登陆</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261047230" status="failed" stop="1568261047242">
+      <name>Test_1.test_002</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'text'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111f9cd90&gt;
+
+    @allure.step(title="点击如何上课")
+    def test_002(self):
+&gt;       self.obj.click_who()
+
+Script/test_duyay.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:27: in click_who
+    self.click_search("t",page.who_cou)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 't', values = '如何上课'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+            return self.driver(resourceId=values)
+        elif loc == "x":
+            return self.driver(xpath=values)
+        elif loc == "t":
+&gt;           return  self.driver(text=values)
+E           TypeError: __init__() got an unexpected keyword argument 'text'
+
+base/devices.py:25: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261047231" status="failed" stop="1568261047231">
+          <name>点击如何上课</name>
+          <title>点击如何上课</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261047244" status="failed" stop="1568261048258">
+      <name>Test_1.test_007</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'resourceId'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111f60090&gt;
+
+    @allure.step(title="点击购买课程")
+    def test_007(self):
+        sleep(1)
+&gt;       self.obj.click_buy_coiu()
+
+Script/test_duyay.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:32: in click_buy_coiu
+    self.click_search("d",page.click_buy)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 'd', values = 'ai.zile.app:id/card_view'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+&gt;           return self.driver(resourceId=values)
+E           TypeError: __init__() got an unexpected keyword argument 'resourceId'
+
+base/devices.py:21: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261047245" status="failed" stop="1568261048247">
+          <name>点击购买课程</name>
+          <title>点击购买课程</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261048259" status="failed" stop="1568261048271">
+      <name>Test_1.test_003</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'resourceId'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111f9c590&gt;
+
+    @allure.step(title="点击课堂")
+    def test_003(self):
+&gt;       self.obj.click_cou()
+
+Script/test_duyay.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:37: in click_cou
+    self.click_search("d",page.click_cou)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 'd', values = 'ai.zile.app:id/nav_course'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+&gt;           return self.driver(resourceId=values)
+E           TypeError: __init__() got an unexpected keyword argument 'resourceId'
+
+base/devices.py:21: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261048260" status="failed" stop="1568261048260">
+          <name>点击课堂</name>
+          <title>点击课堂</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261048273" status="failed" stop="1568261048288">
+      <name>Test_1.test_005</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'text'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x1108b8a90&gt;
+
+    @allure.step(title="操作关卡内部")
+    def test_005(self):
+&gt;       self.obj.click_for_cou()
+
+Script/test_duyay.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:46: in click_for_cou
+    self.click_search("t","%s" % i)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 't', values = "I'm hungry"
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+            return self.driver(resourceId=values)
+        elif loc == "x":
+            return self.driver(xpath=values)
+        elif loc == "t":
+&gt;           return  self.driver(text=values)
+E           TypeError: __init__() got an unexpected keyword argument 'text'
+
+base/devices.py:25: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1568261048275" status="failed" stop="1568261048275">
+          <name>操作关卡内部</name>
+          <title>操作关卡内部</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1568261048290" status="failed" stop="1568261048310">
+      <name>Test_1.test_008</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'text'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111fa6810&gt;
+
+    def test_008(self):
+&gt;       self.obj.click_reivw()
+
+Script/test_duyay.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:69: in click_reivw
+    self.click_search("t",page.review)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 't', values = 'Review'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+            return self.driver(resourceId=values)
+        elif loc == "x":
+            return self.driver(xpath=values)
+        elif loc == "t":
+&gt;           return  self.driver(text=values)
+E           TypeError: __init__() got an unexpected keyword argument 'text'
+
+base/devices.py:25: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1568261048311" status="failed" stop="1568261048323">
+      <name>Test_1.test_009</name>
+      <failure>
+        <message>TypeError: __init__() got an unexpected keyword argument 'resourceId'</message>
+        <stack-trace>self = &lt;test_duyay.Test_1 object at 0x111f95250&gt;
+
+    def test_009(self):
+&gt;       self.obj.click_foud()
+
+Script/test_duyay.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+page/scripts.py:81: in click_foud
+    self.click_search("d",page.found)
+base/devices.py:34: in click_search
+    return self.search_element(loc,values).click()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.scripts.search object at 0x111f1db90&gt;, loc = 'd', values = 'ai.zile.app:id/nav_discover'
+
+    def search_element(self,loc,values=None):
+        if loc == "d":
+&gt;           return self.driver(resourceId=values)
+E           TypeError: __init__() got an unexpected keyword argument 'resourceId'
+
+base/devices.py:21: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="35574-MainThread"/>
+        <label name="host" value="edzdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
